@@ -1,0 +1,274 @@
+/* Переменные */
+:root {
+  /* Старые переменные */
+  --white: #fff;
+  --black: #000;
+  --text-black: #1e1e1e;
+  --light-green-overlay: rgba(11, 46, 45, 0.5);
+  --font-family-geologica: geologica, arial, sans-serif;
+  
+  /* ===== ЦВЕТА ИЗ FIGMA ===== */
+  --color-text: #3D5A73;        /* text - основной текст */
+  --color-stroke: #A7BDC5;      /* stroke - рамки и границы */
+  --color-contact: #E6F8FF;     /* contact - фон полей ввода */
+  --color-voity: #66A88A;       /* voity - ЗЕЛЁНЫЙ для кнопки */
+  --color-process: #80A4FF;     /* process - СИНИЙ для фокуса */
+  --color-bg: #E8F2E2;          /* bg - фон страницы */
+  --color-fon: #F5F5F5;         /* Fon - фон карточки */
+  --color-text-white: #FFFFFF;  /* text-white - текст на кнопке */
+  
+  /* Дополнительные переменные */
+  --secondary-background: #f0f0f0;
+  --light-grey: #d1d5db;
+  --border: #d1d5db;
+  --accent: #80A4FF;
+  --accent-bg: rgba(128, 164, 255, 0.1);
+  --accent-border: #80A4FF;
+  --text-h: #3D5A73;
+  --social-bg: #f3f4f6;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+  font-family: geologica;
+  src: url('./assets/fonts/Geologica.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Базовый сброс стилей */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--secondary-background);
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--light-grey);
+  border-radius: 12px;
+  cursor: pointer;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--border);
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  line-height: 1;
+  font-family: var(--font-family-geologica);
+  background-color: var(--secondary-background);
+  color: var(--text-black);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+  &:focus-visible {
+      outline: none;
+  }
+}
+svg {
+  flex-shrink: 0;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+input[type='search']::-webkit-search-cancel-button {
+  appearance: none;
+}
+input[type='search']::-webkit-search-decoration {
+  appearance: none;
+}
+input[type='search']::-moz-search-cancel-button {
+  appearance: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  font-size: clamp(1.75rem, 1.6286rem + 0.5178vw, 2.25rem);
+  line-height: normal;
+  font-weight: 500;
+}
+h2 {
+  font-size: clamp(1.375rem, 1.3143rem + 0.2589vw, 1.625rem);
+  line-height: clamp(1.625rem, 1.5643rem + 0.2589vw, 1.875rem);
+  font-weight: 600;
+}
+h3 {
+  font-size: clamp(1.125rem, 1.0947rem + 0.1294vw, 1.25rem);
+  line-height: clamp(1.375rem, 1.3447rem + 0.1294vw, 1.5rem);
+  font-weight: 500;
+}
+.text-title {
+  font-size: clamp(1.75rem, 1.6286rem + 0.5178vw, 2.25rem);
+  line-height: normal;
+  font-weight: 500;
+}
+.text-huge {
+  font-size: clamp(1.375rem, 1.3143rem + 0.2589vw, 1.625rem);
+  line-height: clamp(1.625rem, 1.5643rem + 0.2589vw, 1.875rem);
+  font-weight: 600;
+}
+.text-large {
+  font-size: clamp(1.125rem, 1.0947rem + 0.1294vw, 1.25rem);
+  line-height: normal;
+  font-weight: 400;
+}
+.text-normal {
+  font-size: clamp(0.9375rem, 0.9223rem + 0.0647vw, 1rem);
+  line-height: normal;
+  font-weight: 400;
+}
+.text-small {
+  font-size: clamp(0.8125rem, 0.7973rem + 0.0647vw, 0.875rem);
+  line-height: normal;
+  font-weight: 400;
+}
+.text-label {
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 400;
+}
