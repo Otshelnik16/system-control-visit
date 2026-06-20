@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import iconImg from './assets/icone.png'
-import './App.css'
+import iconImg from '../../../assets/icone.png' 
+import styles from './login.module.scss'
 
-function App() {
-  const [login, setLogin] = useState('')
-  const [password, setPassword] = useState('')
+export const Login = () => {
+  const [login, setLogin] = useState('student')
+  const [password, setPassword] = useState('**********')
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -13,19 +13,17 @@ function App() {
   }
 
   return (
-    <div className="login-container">
-      <div className="login-card">
-        <img src={iconImg} alt="Логотип" className="login-icon" />
+    <div className={styles.loginContainer}>
+      <div className={styles.loginCard}>
+        <img src={iconImg} alt="Логотип" className={styles.loginIcon} />
         
-        <h1 className="login-title">Контроль посещаемости</h1>
-        <p className="login-description">
+        <h1 className={styles.loginTitle}>Контроль посещаемости</h1>
+        <p className={styles.loginDescription}>
           Войдите в систему для отметки или просмотра таблеток
         </p>
 
-        {/* ТЕГИ УДАЛЕНЫ! */}
-
-        <form onSubmit={handleSubmit} className="login-form">
-          <div className="form-group">
+        <form onSubmit={handleSubmit} className={styles.loginForm}>
+          <div className={styles.formGroup}>
             <label htmlFor="login">Логин</label>
             <input
               type="text"
@@ -36,7 +34,7 @@ function App() {
             />
           </div>
 
-          <div className="form-group">
+          <div className={styles.formGroup}>
             <label htmlFor="password">Пароль</label>
             <input
               type="password"
@@ -47,7 +45,7 @@ function App() {
             />
           </div>
 
-          <button type="submit" className="login-btn">
+          <button type="submit" className={styles.loginBtn}>
             Войти
           </button>
         </form>
@@ -55,5 +53,3 @@ function App() {
     </div>
   )
 }
-
-export default App

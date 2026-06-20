@@ -1,0 +1,121 @@
+/* ========================================
+   АВТОРИЗАЦИЯ - СТИЛИ ДЛЯ КОМПОНЕНТА LOGIN
+   ======================================== */
+
+/* ----- КОНТЕЙНЕР (ФОН СТРАНИЦЫ) ----- */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-bg);
+    padding: 20px;
+  }
+  
+  /* ----- КАРТОЧКА ----- */
+  .loginCard {
+    background: var(--color-fon);
+    padding: 45px 55px 55px 55px;
+    border-radius: 24px;
+    border: 1.5px solid var(--color-stroke);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+  
+  /* ----- ИКОНКА ----- */
+  .loginIcon {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 80px;
+    height: auto;
+  }
+  
+  /* ----- ЗАГОЛОВОК ----- */
+  .loginTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 8px;
+  }
+  
+  /* ----- ОПИСАНИЕ ----- */
+  .loginDescription {
+    font-size: 15px;
+    color: var(--color-text);
+    margin-top: 0;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  
+  /* ----- ФОРМА ----- */
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ----- ГРУППА ПОЛЯ ----- */
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+  }
+  
+  .formGroup label {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 2px;
+  }
+  
+  /* ----- ПОЛЯ ВВОДА ----- */
+  .formGroup input {
+    padding: 14px 18px;
+    border: 1.5px solid var(--color-stroke);
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: var(--color-contact);
+    color: var(--color-text);
+  }
+  
+  .formGroup input::placeholder {
+    color: var(--color-text);
+    opacity: 0.5;
+  }
+  
+  /* ----- АКТИВНОЕ ПОЛЕ (СИНЯЯ ОБВОДКА) ----- */
+  .formGroup input:focus {
+    border-color: var(--color-process);
+    box-shadow: 0 0 0 4px rgba(128, 164, 255, 0.2);
+  }
+  
+  /* ----- КНОПКА "ВОЙТИ" ----- */
+  .loginBtn {
+    background: var(--color-voity);
+    color: var(--color-text-white);
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    margin-top: 8px;
+  }
+  
+  .loginBtn:hover {
+    background: #558F75;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 168, 138, 0.4);
+  }
+  
+  .loginBtn:active {
+    transform: scale(0.97);
+  }
