@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Logo } from '../../ui/logo/logo';
 import { Title } from '../../ui/title/title';
 import { Input } from '../../ui/input/input';
@@ -8,11 +9,21 @@ import styles from './login.module.scss';
 export const Login = () => {
   const [login, setLogin] = useState('student');
   const [password, setPassword] = useState('**********');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
     console.log('Логин:', login);
     console.log('Пароль:', password);
+
+    if (login === 'student') {
+      navigate('/student');
+    } else if (login === 'teacher') {
+      navigate('/teacher');
+    } else {
+      alert('Неверный логин или пароль');
+    }
   };
 
   return (
