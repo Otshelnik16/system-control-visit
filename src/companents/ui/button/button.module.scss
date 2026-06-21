@@ -1,0 +1,22 @@
+.button {
+    background: var(--color-voity);
+    color: var(--color-text-white);
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    margin-top: 8px;
+  
+    &:hover {
+      background: #558F75;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 168, 138, 0.4);
+    }
+  
+    &:active {
+      transform: scale(0.97);
+    }
+  }
