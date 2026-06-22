@@ -16,7 +16,9 @@
   --color-bg: #E8F2E2;          /* bg - фон страницы */
   --color-fon: #F5F5F5;         /* Fon - фон карточки */
   --color-text-white: #FFFFFF;  /* text-white - текст на кнопке */
-  
+  --color-text-button: #5B6F82;
+  --color-button: #F5D6C6;
+  --color-exit: #E57373;
   /* Дополнительные переменные */
   --secondary-background: #f0f0f0;
   --light-grey: #d1d5db;
