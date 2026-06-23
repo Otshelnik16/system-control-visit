@@ -1,134 +1,181 @@
+/* ===== ВНЕШНЯЯ ОБЁРТКА (ФОН) ===== */
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-bg, #E8F2E2);
+  padding: 20px;
+}
+
+/* ===== КАРТОЧКА (ОБЩАЯ РАМКА) ===== */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: var(--font-family-geologica, Arial, sans-serif);
+  max-width: 900px;
+  width: 100%;
+  background: var(--color-fon, #F5F5F5);
+  border: 1.5px solid var(--color-stroke, #A7BDC5);
+  border-radius: 24px;
+  padding: 40px 45px 45px 45px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: var(--font-family-geologica, Arial, sans-serif);
+}
+
+/* ===== ШАПКА ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-stroke, #A7BDC5);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerText h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text, #3D5A73);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.headerText .group {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text, #3D5A73);
+  opacity: 0.7;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.teacherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.teacherName {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text, #3D5A73);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.teacherRole {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text, #3D5A73);
+  opacity: 0.7;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.exit {
+  background: #E57373;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  align-self: center;
+
+  &:hover {
+    background: #D32F2F;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 16px;
-    border-bottom: 2px solid var(--color-stroke, #A7BDC5);
-  
-    h1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: var(--color-text, #3D5A73);
-      margin: 0;
-    }
-  
-    .group {
-      font-size: 16px;
-      font-weight: 500;
-      color: var(--color-text, #3D5A73);
-      opacity: 0.7;
-    }
+}
+
+/* ===== ГРУППЫ - КОМПАКТНЫЕ КАРТОЧКИ ===== */
+.groups {
+  margin-top: 10px;
+}
+
+.groups h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text, #3D5A73);
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.groupList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.groupCard {
+  background: var(--color-fon, #F5F5F5);
+  border: 1.5px solid var(--color-stroke, #A7BDC5);
+  border-radius: 12px;
+  padding: 14px 18px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+
+  &:hover {
+    background: var(--color-contact, #E6F8FF);
+    border-color: var(--color-process, #80A4FF);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
-  
-  .card {
-    background: var(--color-fon, #F5F5F5);
-    border: 1.5px solid var(--color-stroke, #A7BDC5);
-    border-radius: 16px;
-    padding: 20px 24px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    .name {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--color-text, #3D5A73);
-      margin: 0;
-    }
-  
-    .status {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--color-text, #3D5A73);
-      background: var(--color-contact, #E6F8FF);
-      padding: 4px 16px;
-      border-radius: 20px;
-      opacity: 0.8;
-    }
-  }
-  
-  .logout {
-    background: transparent;
-    border: 1.5px solid var(--color-stroke, #A7BDC5);
-    border-radius: 10px;
-    padding: 8px 20px;
-    font-size: 14px;
-    font-weight: 500;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
     color: var(--color-text, #3D5A73);
+    margin: 0 0 4px 0;
+  }
+
+  p {
+    font-size: 13px;
+    color: var(--color-text, #3D5A73);
+    margin: 2px 0;
+    opacity: 0.8;
+  }
+
+  .open {
+    margin-top: 10px;
+    background: #F5D6C6;
+    color: #5B6F82;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s;
-    margin-bottom: 30px;
-  
+    transition: background 0.2s;
+
     &:hover {
-      background: var(--color-stroke, #A7BDC5);
-      color: white;
+      background: #E8C4B4;
     }
   }
-  
-  .groups {
-    h2 {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--color-text, #3D5A73);
-      margin-bottom: 16px;
-    }
-  
-    .groupList {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-  
-    .groupCard {
-      background: var(--color-fon, #F5F5F5);
-      border: 1px solid var(--color-stroke, #A7BDC5);
-      border-radius: 12px;
-      padding: 18px 22px;
-      transition: all 0.2s;
-  
-      &:hover {
-        background: var(--color-contact, #E6F8FF);
-        border-color: var(--color-process, #80A4FF);
-      }
-  
-      h3 {
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--color-text, #3D5A73);
-        margin-bottom: 4px;
-      }
-  
-      p {
-        font-size: 14px;
-        color: var(--color-text, #3D5A73);
-        margin: 2px 0;
-        opacity: 0.8;
-      }
-  
-      .open {
-        margin-top: 10px;
-        background: var(--color-process, #80A4FF);
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 8px 20px;
-        font-size: 14px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: background 0.2s;
-  
-        &:hover {
-          background: #6A8FE0;
-        }
-      }
-    }
-  }
+}

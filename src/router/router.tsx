@@ -1,22 +1,21 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import type { ReactNode } from 'react';
-import { Login } from '../components/pages/login/login.tsx';
-import { MainStudent } from '../components/pages/MainStudent/mainStudent.tsx';
-import { MainTeacher } from '../components/pages/MainTeacher/mainTeacher.tsx'; 
+import { Login } from '../components/pages/login/login';
+import { MainStudent } from '../components/pages/MainStudent/mainStudent';
+import { MainTeacher } from '../components/pages/MainTeacher/mainTeacher';
+import { Discipline } from '../components/pages/discipline/discipline';
+import { getUserRole, isAuthenticated, type UserRole } from '../utils/auth';
 
 interface ProtectedRouteProps {
   children: ReactNode;
-  role?: 'student' | 'teacher';
+  role: UserRole;
 }
 
 const ProtectedRoute = ({ children, role }: ProtectedRouteProps) => {
-  const isAuthenticated = localStorage.getItem('token') !== null;
-  const userRole = localStorage.getItem('role') as 'student' | 'teacher' | null;
-
-  if (!isAuthenticated) {
+  if (!isAuthenticated()) {
     return <Navigate to="/login" replace />;
   }
-  if (role && userRole !== role) {
+  if (getUserRole() !== role) {
     return <Navigate to="/login" replace />;
   }
   return <>{children}</>;
@@ -37,10 +36,19 @@ export const Router = () => {
       />
 
       <Route
+        path="/discipline/:id"
+        element={
+          <ProtectedRoute role="student">
+            <Discipline />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
         path="/teacher"
         element={
           <ProtectedRoute role="teacher">
-            <MainTeacher /> {/* 👈 ТЕПЕРЬ НАСТОЯЩАЯ СТРАНИЦА */}
+            <MainTeacher />
           </ProtectedRoute>
         }
       />

@@ -30,7 +30,6 @@
   border-bottom: 2px solid var(--color-stroke, #A7BDC5);
 }
 
-/* ===== ЛЕВАЯ ЧАСТЬ: ИКОНКА + ТЕКСТ ===== */
 .headerLeft {
   display: flex;
   align-items: center;
@@ -67,7 +66,6 @@
   line-height: 1.2;
 }
 
-/* ===== ПРАВАЯ ЧАСТЬ: ФИО + СТУДЕНТ + КНОПКА ===== */
 .headerRight {
   display: flex;
   align-items: center;
@@ -100,7 +98,6 @@
   line-height: 1.2;
 }
 
-/* ===== КНОПКА ВЫЙТИ ===== */
 .exit {
   background: #E57373;
   color: white;
@@ -113,23 +110,41 @@
   transition: background 0.2s;
   white-space: nowrap;
   flex-shrink: 0;
+}
 
-  &:hover {
-    background: #D32F2F;
-  }
+.exit:hover {
+  background: #D32F2F;
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-stroke, #A7BDC5);
+}
+
+.disciplineTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text, #3D5A73);
+  opacity: 0.7;
+  text-align: left;
+}
+
+.attendanceTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text, #3D5A73);
+  opacity: 0.7;
+  text-align: right;
 }
 
 /* ===== СПИСОК ДИСЦИПЛИН ===== */
 .disciplines {
-  margin-top: 10px;
-}
-
-.disciplines h2 {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-text, #3D5A73);
-  margin-bottom: 16px;
-  opacity: 0.7;
+  margin-top: 0;
 }
 
 .list {
@@ -156,23 +171,29 @@
   border-color: var(--color-process, #80A4FF);
 }
 
-.item span {
+.disciplineName {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-text, #3D5A73);
+  text-align: left;
 }
 
+/* ===== КНОПКА «ПОСМОТРЕТЬ» ===== */
 .view {
   background: #F5D6C6;
   color: #5B6F82;
   border: none;
   border-radius: 8px;
-  padding: 6px 16px;
+  padding: 6px 22px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
   white-space: nowrap;
+  text-align: center;
+  width: 130px;
+  margin: 0;
+  display: block;
 }
 
 .view:hover {

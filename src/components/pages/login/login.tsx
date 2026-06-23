@@ -1,32 +1,39 @@
-import { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Logo } from '../../ui/logo/logo.tsx';
-import { Title } from '../../ui/title/title.tsx';
-import { Input } from '../../ui/input/input.tsx';
-import { Button } from '../../ui/button/button.tsx';
+import { authenticateUser, generateToken } from '../../../services/authService';
+import { setAuth } from '../../../utils/auth';
+import { Logo } from '../../ui/logo/logo';
+import { Title } from '../../ui/title/title';
+import { Input } from '../../ui/input/input';
+import { Button } from '../../ui/mainButton/button.tsx';
 import styles from './login.module.scss';
 
 export const Login = () => {
-  const [login, setLogin] = useState('student');
-  const [password, setPassword] = useState('**********');
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError('');
+    setLoading(true);
 
-    console.log('Логин:', login);
-    console.log('Пароль:', password);
+    try {
+      const user = await authenticateUser(login, password);
 
-    if (login === 'student') {
-      localStorage.setItem('token', 'fake-token');
-      localStorage.setItem('role', 'student');
-      navigate('/student');
-    } else if (login === 'teacher') {
-      localStorage.setItem('token', 'fake-token');
-      localStorage.setItem('role', 'teacher');
-      navigate('/teacher');
-    } else {
-      alert('Неверный логин или пароль');
+      if (!user) {
+        setError('Неверный логин или пароль');
+        return;
+      }
+
+      setAuth(user, generateToken());
+      navigate(user.role === 'student' ? '/student' : '/teacher');
+    } catch {
+      setError('Не удалось подключиться к серверу. Запустите npm run dev');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -49,7 +56,10 @@ export const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button type="submit">Войти</Button>
+          {error && <div className={styles.error}>{error}</div>}
+          <Button type="submit" disabled={loading}>
+            {loading ? 'Загрузка...' : 'Войти'}
+          </Button>
         </form>
       </div>
     </div>

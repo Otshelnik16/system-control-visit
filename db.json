@@ -1,0 +1,2795 @@
+{
+    "teachers": [
+      {
+        "id": "1",
+        "login": "teacher",
+        "password": "teacher123",
+        "fullName": "Микулин Андрей Николаевич"
+      }
+    ],
+    "students": [
+      {
+        "id": "1",
+        "login": "student1",
+        "password": "student123",
+        "fullName": "Бахман Анжелика",
+        "groupId": 2
+      },
+      {
+        "id": "2",
+        "login": "student2",
+        "password": "student123",
+        "fullName": "Белоус Виктория",
+        "groupId": 2
+      },
+      {
+        "id": "3",
+        "login": "student3",
+        "password": "student123",
+        "fullName": "Васильев Тимофей",
+        "groupId": 2
+      },
+      {
+        "id": "4",
+        "login": "student4",
+        "password": "student123",
+        "fullName": "Гойкина Ирина",
+        "groupId": 2
+      },
+      {
+        "id": "5",
+        "login": "student5",
+        "password": "student123",
+        "fullName": "Гоцкин Вадим",
+        "groupId": 2
+      },
+      {
+        "id": "6",
+        "login": "student6",
+        "password": "student123",
+        "fullName": "Зозуля Мария",
+        "groupId": 2
+      },
+      {
+        "id": "7",
+        "login": "student7",
+        "password": "student123",
+        "fullName": "Исайкин Егор",
+        "groupId": 2
+      },
+      {
+        "id": "8",
+        "login": "student8",
+        "password": "student123",
+        "fullName": "Кабанов Артём",
+        "groupId": 2
+      },
+      {
+        "id": "9",
+        "login": "student9",
+        "password": "student123",
+        "fullName": "Костылева Екатерина",
+        "groupId": 2
+      },
+      {
+        "id": "10",
+        "login": "student10",
+        "password": "student123",
+        "fullName": "Кравченко Тимофей",
+        "groupId": 2
+      },
+      {
+        "id": "11",
+        "login": "student11",
+        "password": "student123",
+        "fullName": "Куксенко Никодим",
+        "groupId": 2
+      },
+      {
+        "id": "12",
+        "login": "student12",
+        "password": "student123",
+        "fullName": "Лавриненко Валерия",
+        "groupId": 2
+      },
+      {
+        "id": "13",
+        "login": "student13",
+        "password": "student123",
+        "fullName": "Лесников Сергей",
+        "groupId": 2
+      },
+      {
+        "id": "14",
+        "login": "student14",
+        "password": "student123",
+        "fullName": "Малахова Алина",
+        "groupId": 2
+      },
+      {
+        "id": "15",
+        "login": "student15",
+        "password": "student123",
+        "fullName": "Малышев Богдан",
+        "groupId": 2
+      },
+      {
+        "id": "16",
+        "login": "student16",
+        "password": "student123",
+        "fullName": "Марченко Елена",
+        "groupId": 2
+      },
+      {
+        "id": "17",
+        "login": "student17",
+        "password": "student123",
+        "fullName": "Медяников Александр",
+        "groupId": 2
+      },
+      {
+        "id": "18",
+        "login": "student18",
+        "password": "student123",
+        "fullName": "Осмачко Диана",
+        "groupId": 2
+      },
+      {
+        "id": "19",
+        "login": "student19",
+        "password": "student123",
+        "fullName": "Пасечникова София",
+        "groupId": 2
+      },
+      {
+        "id": "20",
+        "login": "student20",
+        "password": "student123",
+        "fullName": "Пожидаева Алина",
+        "groupId": 2
+      },
+      {
+        "id": "21",
+        "login": "student21",
+        "password": "student123",
+        "fullName": "Прасолов Захар",
+        "groupId": 2
+      },
+      {
+        "id": "22",
+        "login": "student22",
+        "password": "student123",
+        "fullName": "Прохорович Дарья",
+        "groupId": 2
+      },
+      {
+        "id": "23",
+        "login": "student23",
+        "password": "student123",
+        "fullName": "Хабаху Темиркан",
+        "groupId": 2
+      },
+      {
+        "id": "24",
+        "login": "student24",
+        "password": "student123",
+        "fullName": "Шагамбаев Никита",
+        "groupId": 2
+      },
+      {
+        "id": "25",
+        "login": "student25",
+        "password": "student123",
+        "fullName": "Шангин Ростислав",
+        "groupId": 2
+      },
+      {
+        "id": "26",
+        "login": "student26",
+        "password": "student123",
+        "fullName": "Алексеева Анастасия",
+        "groupId": 1
+      },
+      {
+        "id": "27",
+        "login": "student27",
+        "password": "student123",
+        "fullName": "Борисов Иван",
+        "groupId": 1
+      },
+      {
+        "id": "28",
+        "login": "student28",
+        "password": "student123",
+        "fullName": "Волкова Екатерина",
+        "groupId": 1
+      },
+      {
+        "id": "29",
+        "login": "student29",
+        "password": "student123",
+        "fullName": "Григорьев Павел",
+        "groupId": 1
+      },
+      {
+        "id": "30",
+        "login": "student30",
+        "password": "student123",
+        "fullName": "Денисова Мария",
+        "groupId": 1
+      },
+      {
+        "id": "31",
+        "login": "student31",
+        "password": "student123",
+        "fullName": "Емельянов Андрей",
+        "groupId": 1
+      },
+      {
+        "id": "32",
+        "login": "student32",
+        "password": "student123",
+        "fullName": "Жукова Ольга",
+        "groupId": 1
+      },
+      {
+        "id": "33",
+        "login": "student33",
+        "password": "student123",
+        "fullName": "Зайцев Алексей",
+        "groupId": 1
+      },
+      {
+        "id": "34",
+        "login": "student34",
+        "password": "student123",
+        "fullName": "Игнатьева Татьяна",
+        "groupId": 1
+      },
+      {
+        "id": "35",
+        "login": "student35",
+        "password": "student123",
+        "fullName": "Козлов Николай",
+        "groupId": 1
+      },
+      {
+        "id": "36",
+        "login": "student36",
+        "password": "student123",
+        "fullName": "Ларина Светлана",
+        "groupId": 1
+      },
+      {
+        "id": "37",
+        "login": "student37",
+        "password": "student123",
+        "fullName": "Морозов Артём",
+        "groupId": 1
+      },
+      {
+        "id": "38",
+        "login": "student38",
+        "password": "student123",
+        "fullName": "Наумова Ирина",
+        "groupId": 1
+      },
+      {
+        "id": "39",
+        "login": "student39",
+        "password": "student123",
+        "fullName": "Орлов Денис",
+        "groupId": 1
+      },
+      {
+        "id": "40",
+        "login": "student40",
+        "password": "student123",
+        "fullName": "Петрова Анна",
+        "groupId": 1
+      },
+      {
+        "id": "41",
+        "login": "student41",
+        "password": "student123",
+        "fullName": "Романов Евгений",
+        "groupId": 1
+      },
+      {
+        "id": "42",
+        "login": "student42",
+        "password": "student123",
+        "fullName": "Сидорова Кристина",
+        "groupId": 1
+      },
+      {
+        "id": "43",
+        "login": "student43",
+        "password": "student123",
+        "fullName": "Тихомиров Илья",
+        "groupId": 1
+      },
+      {
+        "id": "44",
+        "login": "student44",
+        "password": "student123",
+        "fullName": "Ушакова Виктория",
+        "groupId": 1
+      },
+      {
+        "id": "45",
+        "login": "student45",
+        "password": "student123",
+        "fullName": "Федоров Дмитрий",
+        "groupId": 1
+      },
+      {
+        "id": "46",
+        "login": "student46",
+        "password": "student123",
+        "fullName": "Андреев Максим",
+        "groupId": 3
+      },
+      {
+        "id": "47",
+        "login": "student47",
+        "password": "student123",
+        "fullName": "Беляев Роман",
+        "groupId": 3
+      },
+      {
+        "id": "48",
+        "login": "student48",
+        "password": "student123",
+        "fullName": "Виноградова Софья",
+        "groupId": 3
+      },
+      {
+        "id": "49",
+        "login": "student49",
+        "password": "student123",
+        "fullName": "Гаврилова Полина",
+        "groupId": 3
+      },
+      {
+        "id": "50",
+        "login": "student50",
+        "password": "student123",
+        "fullName": "Давыдова Вероника",
+        "groupId": 3
+      },
+      {
+        "id": "51",
+        "login": "student51",
+        "password": "student123",
+        "fullName": "Ермаков Олег",
+        "groupId": 3
+      },
+      {
+        "id": "52",
+        "login": "student52",
+        "password": "student123",
+        "fullName": "Захарова Елизавета",
+        "groupId": 3
+      },
+      {
+        "id": "53",
+        "login": "student53",
+        "password": "student123",
+        "fullName": "Иванов Игорь",
+        "groupId": 3
+      },
+      {
+        "id": "54",
+        "login": "student54",
+        "password": "student123",
+        "fullName": "Кузьмина Марина",
+        "groupId": 3
+      },
+      {
+        "id": "55",
+        "login": "student55",
+        "password": "student123",
+        "fullName": "Лебедев Денис",
+        "groupId": 3
+      },
+      {
+        "id": "56",
+        "login": "student56",
+        "password": "student123",
+        "fullName": "Миронова Алина",
+        "groupId": 3
+      },
+      {
+        "id": "57",
+        "login": "student57",
+        "password": "student123",
+        "fullName": "Никитин Егор",
+        "groupId": 3
+      },
+      {
+        "id": "58",
+        "login": "student58",
+        "password": "student123",
+        "fullName": "Овчинникова Анастасия",
+        "groupId": 3
+      },
+      {
+        "id": "59",
+        "login": "student59",
+        "password": "student123",
+        "fullName": "Павлов Вадим",
+        "groupId": 3
+      },
+      {
+        "id": "60",
+        "login": "student60",
+        "password": "student123",
+        "fullName": "Рыбакова Елена",
+        "groupId": 3
+      },
+      {
+        "id": "61",
+        "login": "student61",
+        "password": "student123",
+        "fullName": "Сергеева Дарина",
+        "groupId": 3
+      },
+      {
+        "id": "62",
+        "login": "student62",
+        "password": "student123",
+        "fullName": "Тимофеев Алексей",
+        "groupId": 3
+      },
+      {
+        "id": "63",
+        "login": "student63",
+        "password": "student123",
+        "fullName": "Ульянова Ксения",
+        "groupId": 3
+      },
+      {
+        "id": "64",
+        "login": "student64",
+        "password": "student123",
+        "fullName": "Харитонов Никита",
+        "groupId": 3
+      },
+      {
+        "id": "65",
+        "login": "student65",
+        "password": "student123",
+        "fullName": "Черных Анастасия",
+        "groupId": 3
+      },
+      {
+        "id": "66",
+        "login": "student66",
+        "password": "student123",
+        "fullName": "Шестакова Валерия",
+        "groupId": 4
+      },
+      {
+        "id": "67",
+        "login": "student67",
+        "password": "student123",
+        "fullName": "Юдин Константин",
+        "groupId": 4
+      },
+      {
+        "id": "68",
+        "login": "student68",
+        "password": "student123",
+        "fullName": "Яковлева Алиса",
+        "groupId": 4
+      },
+      {
+        "id": "69",
+        "login": "student69",
+        "password": "student123",
+        "fullName": "Андреева Екатерина",
+        "groupId": 4
+      },
+      {
+        "id": "70",
+        "login": "student70",
+        "password": "student123",
+        "fullName": "Богданова Ксения",
+        "groupId": 4
+      },
+      {
+        "id": "71",
+        "login": "student71",
+        "password": "student123",
+        "fullName": "Воробьев Илья",
+        "groupId": 4
+      },
+      {
+        "id": "72",
+        "login": "student72",
+        "password": "student123",
+        "fullName": "Галкина Ирина",
+        "groupId": 4
+      },
+      {
+        "id": "73",
+        "login": "student73",
+        "password": "student123",
+        "fullName": "Дмитриев Сергей",
+        "groupId": 4
+      },
+      {
+        "id": "74",
+        "login": "student74",
+        "password": "student123",
+        "fullName": "Ефимова Лилия",
+        "groupId": 4
+      },
+      {
+        "id": "75",
+        "login": "student75",
+        "password": "student123",
+        "fullName": "Жирнов Алексей",
+        "groupId": 4
+      },
+      {
+        "id": "76",
+        "login": "student76",
+        "password": "student123",
+        "fullName": "Зверев Роман",
+        "groupId": 4
+      },
+      {
+        "id": "77",
+        "login": "student77",
+        "password": "student123",
+        "fullName": "Ильина Виктория",
+        "groupId": 4
+      },
+      {
+        "id": "78",
+        "login": "student78",
+        "password": "student123",
+        "fullName": "Казакова Анжелика",
+        "groupId": 4
+      },
+      {
+        "id": "79",
+        "login": "student79",
+        "password": "student123",
+        "fullName": "Лобачев Максим",
+        "groupId": 4
+      },
+      {
+        "id": "80",
+        "login": "student80",
+        "password": "student123",
+        "fullName": "Михайлова Юлия",
+        "groupId": 4
+      },
+      {
+        "id": "81",
+        "login": "student81",
+        "password": "student123",
+        "fullName": "Назаров Вячеслав",
+        "groupId": 4
+      },
+      {
+        "id": "82",
+        "login": "student82",
+        "password": "student123",
+        "fullName": "Остапчук Дарья",
+        "groupId": 4
+      },
+      {
+        "id": "83",
+        "login": "student83",
+        "password": "student123",
+        "fullName": "Поляков Алексей",
+        "groupId": 4
+      },
+      {
+        "id": "84",
+        "login": "student84",
+        "password": "student123",
+        "fullName": "Рыжова Татьяна",
+        "groupId": 4
+      },
+      {
+        "id": "85",
+        "login": "student85",
+        "password": "student123",
+        "fullName": "Семенов Григорий",
+        "groupId": 4
+      }
+    ],
+    "groups": [
+      {
+        "id": 1,
+        "name": "ИС-22",
+        "teacherId": 1
+      },
+      {
+        "id": 2,
+        "name": "ИС-21",
+        "teacherId": 1
+      },
+      {
+        "id": 3,
+        "name": "КС-21",
+        "teacherId": 1
+      },
+      {
+        "id": 4,
+        "name": "КС-22",
+        "teacherId": 1
+      }
+    ],
+    "disciplines": [
+      {
+        "id": 1,
+        "name": "Основы 3Д моделирования в Blender",
+        "groupId": 1
+      },
+      {
+        "id": 2,
+        "name": "Основы программирования",
+        "groupId": 1
+      },
+      {
+        "id": 3,
+        "name": "Веб-дизайн на Figma",
+        "groupId": 1
+      },
+      {
+        "id": 4,
+        "name": "Создание БД в 1С",
+        "groupId": 1
+      },
+      {
+        "id": 5,
+        "name": "Основы 3Д моделирования в Blender",
+        "groupId": 2
+      },
+      {
+        "id": 6,
+        "name": "Основы программирования",
+        "groupId": 2
+      },
+      {
+        "id": 7,
+        "name": "Веб-дизайн на Figma",
+        "groupId": 2
+      },
+      {
+        "id": 8,
+        "name": "Создание БД в 1С",
+        "groupId": 2
+      },
+      {
+        "id": 9,
+        "name": "Программирование на Python",
+        "groupId": 3
+      },
+      {
+        "id": 10,
+        "name": "Основы HTML и CSS",
+        "groupId": 3
+      },
+      {
+        "id": 11,
+        "name": "Базы данных",
+        "groupId": 4
+      },
+      {
+        "id": 12,
+        "name": "Сетевые технологии",
+        "groupId": 4
+      }
+    ],
+    "attendance": [
+      {
+        "id": 1,
+        "pollId": 1,
+        "studentId": 1,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 2,
+        "pollId": 1,
+        "studentId": 1,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 3,
+        "pollId": 1,
+        "studentId": 1,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 4,
+        "pollId": 1,
+        "studentId": 1,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 5,
+        "pollId": 2,
+        "studentId": 1,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 6,
+        "pollId": 2,
+        "studentId": 1,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 7,
+        "pollId": 2,
+        "studentId": 1,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 8,
+        "pollId": 2,
+        "studentId": 1,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 9,
+        "pollId": 3,
+        "studentId": 2,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 10,
+        "pollId": 3,
+        "studentId": 2,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 11,
+        "pollId": 3,
+        "studentId": 2,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 12,
+        "pollId": 3,
+        "studentId": 2,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 13,
+        "pollId": 4,
+        "studentId": 2,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 14,
+        "pollId": 4,
+        "studentId": 2,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 15,
+        "pollId": 4,
+        "studentId": 2,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 16,
+        "pollId": 4,
+        "studentId": 2,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 17,
+        "pollId": 5,
+        "studentId": 3,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 18,
+        "pollId": 5,
+        "studentId": 3,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 19,
+        "pollId": 5,
+        "studentId": 3,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 20,
+        "pollId": 5,
+        "studentId": 3,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 21,
+        "pollId": 6,
+        "studentId": 3,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 22,
+        "pollId": 6,
+        "studentId": 3,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 23,
+        "pollId": 6,
+        "studentId": 3,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 24,
+        "pollId": 6,
+        "studentId": 3,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 25,
+        "pollId": 7,
+        "studentId": 4,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 26,
+        "pollId": 7,
+        "studentId": 4,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 27,
+        "pollId": 7,
+        "studentId": 4,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 28,
+        "pollId": 7,
+        "studentId": 4,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 29,
+        "pollId": 8,
+        "studentId": 4,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 30,
+        "pollId": 8,
+        "studentId": 4,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 31,
+        "pollId": 8,
+        "studentId": 4,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 32,
+        "pollId": 8,
+        "studentId": 4,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 33,
+        "pollId": 9,
+        "studentId": 5,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 34,
+        "pollId": 9,
+        "studentId": 5,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 35,
+        "pollId": 9,
+        "studentId": 5,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 36,
+        "pollId": 9,
+        "studentId": 5,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 37,
+        "pollId": 10,
+        "studentId": 5,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 38,
+        "pollId": 10,
+        "studentId": 5,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 39,
+        "pollId": 10,
+        "studentId": 5,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 40,
+        "pollId": 10,
+        "studentId": 5,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 41,
+        "pollId": 11,
+        "studentId": 6,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 42,
+        "pollId": 11,
+        "studentId": 6,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 43,
+        "pollId": 11,
+        "studentId": 6,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 44,
+        "pollId": 11,
+        "studentId": 6,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 45,
+        "pollId": 12,
+        "studentId": 6,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 46,
+        "pollId": 12,
+        "studentId": 6,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 47,
+        "pollId": 12,
+        "studentId": 6,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 48,
+        "pollId": 12,
+        "studentId": 6,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 49,
+        "pollId": 13,
+        "studentId": 7,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 50,
+        "pollId": 13,
+        "studentId": 7,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 51,
+        "pollId": 13,
+        "studentId": 7,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 52,
+        "pollId": 13,
+        "studentId": 7,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 53,
+        "pollId": 14,
+        "studentId": 7,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 54,
+        "pollId": 14,
+        "studentId": 7,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 55,
+        "pollId": 14,
+        "studentId": 7,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 56,
+        "pollId": 14,
+        "studentId": 7,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 57,
+        "pollId": 15,
+        "studentId": 8,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 58,
+        "pollId": 15,
+        "studentId": 8,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 59,
+        "pollId": 15,
+        "studentId": 8,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 60,
+        "pollId": 15,
+        "studentId": 8,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 61,
+        "pollId": 16,
+        "studentId": 8,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 62,
+        "pollId": 16,
+        "studentId": 8,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 63,
+        "pollId": 16,
+        "studentId": 8,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 64,
+        "pollId": 16,
+        "studentId": 8,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 65,
+        "pollId": 17,
+        "studentId": 9,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 66,
+        "pollId": 17,
+        "studentId": 9,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 67,
+        "pollId": 17,
+        "studentId": 9,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 68,
+        "pollId": 17,
+        "studentId": 9,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 69,
+        "pollId": 18,
+        "studentId": 9,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 70,
+        "pollId": 18,
+        "studentId": 9,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 71,
+        "pollId": 18,
+        "studentId": 9,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 72,
+        "pollId": 18,
+        "studentId": 9,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 73,
+        "pollId": 19,
+        "studentId": 10,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 74,
+        "pollId": 19,
+        "studentId": 10,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 75,
+        "pollId": 19,
+        "studentId": 10,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 76,
+        "pollId": 19,
+        "studentId": 10,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 77,
+        "pollId": 20,
+        "studentId": 10,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 78,
+        "pollId": 20,
+        "studentId": 10,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 79,
+        "pollId": 20,
+        "studentId": 10,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 80,
+        "pollId": 20,
+        "studentId": 10,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 81,
+        "pollId": 21,
+        "studentId": 11,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 82,
+        "pollId": 21,
+        "studentId": 11,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 83,
+        "pollId": 21,
+        "studentId": 11,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 84,
+        "pollId": 21,
+        "studentId": 11,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 85,
+        "pollId": 22,
+        "studentId": 11,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 86,
+        "pollId": 22,
+        "studentId": 11,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 87,
+        "pollId": 22,
+        "studentId": 11,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 88,
+        "pollId": 22,
+        "studentId": 11,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 89,
+        "pollId": 23,
+        "studentId": 12,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 90,
+        "pollId": 23,
+        "studentId": 12,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 91,
+        "pollId": 23,
+        "studentId": 12,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 92,
+        "pollId": 23,
+        "studentId": 12,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 93,
+        "pollId": 24,
+        "studentId": 12,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 94,
+        "pollId": 24,
+        "studentId": 12,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 95,
+        "pollId": 24,
+        "studentId": 12,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 96,
+        "pollId": 24,
+        "studentId": 12,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 97,
+        "pollId": 25,
+        "studentId": 13,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 98,
+        "pollId": 25,
+        "studentId": 13,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 99,
+        "pollId": 25,
+        "studentId": 13,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 100,
+        "pollId": 25,
+        "studentId": 13,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 101,
+        "pollId": 26,
+        "studentId": 13,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 102,
+        "pollId": 26,
+        "studentId": 13,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 103,
+        "pollId": 26,
+        "studentId": 13,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 104,
+        "pollId": 26,
+        "studentId": 13,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 105,
+        "pollId": 27,
+        "studentId": 14,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 106,
+        "pollId": 27,
+        "studentId": 14,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 107,
+        "pollId": 27,
+        "studentId": 14,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 108,
+        "pollId": 27,
+        "studentId": 14,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 109,
+        "pollId": 28,
+        "studentId": 14,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 110,
+        "pollId": 28,
+        "studentId": 14,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 111,
+        "pollId": 28,
+        "studentId": 14,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 112,
+        "pollId": 28,
+        "studentId": 14,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 113,
+        "pollId": 29,
+        "studentId": 15,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 114,
+        "pollId": 29,
+        "studentId": 15,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 115,
+        "pollId": 29,
+        "studentId": 15,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 116,
+        "pollId": 29,
+        "studentId": 15,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 117,
+        "pollId": 30,
+        "studentId": 15,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 118,
+        "pollId": 30,
+        "studentId": 15,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 119,
+        "pollId": 30,
+        "studentId": 15,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 120,
+        "pollId": 30,
+        "studentId": 15,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 121,
+        "pollId": 31,
+        "studentId": 17,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 122,
+        "pollId": 31,
+        "studentId": 17,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 123,
+        "pollId": 31,
+        "studentId": 17,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 124,
+        "pollId": 31,
+        "studentId": 17,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 125,
+        "pollId": 32,
+        "studentId": 17,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 126,
+        "pollId": 32,
+        "studentId": 17,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 127,
+        "pollId": 32,
+        "studentId": 17,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 128,
+        "pollId": 32,
+        "studentId": 17,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 129,
+        "pollId": 33,
+        "studentId": 18,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 130,
+        "pollId": 33,
+        "studentId": 18,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 131,
+        "pollId": 33,
+        "studentId": 18,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 132,
+        "pollId": 33,
+        "studentId": 18,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 133,
+        "pollId": 34,
+        "studentId": 18,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 134,
+        "pollId": 34,
+        "studentId": 18,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 135,
+        "pollId": 34,
+        "studentId": 18,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 136,
+        "pollId": 34,
+        "studentId": 18,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 137,
+        "pollId": 35,
+        "studentId": 19,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 138,
+        "pollId": 35,
+        "studentId": 19,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 139,
+        "pollId": 35,
+        "studentId": 19,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 140,
+        "pollId": 35,
+        "studentId": 19,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 141,
+        "pollId": 36,
+        "studentId": 19,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 142,
+        "pollId": 36,
+        "studentId": 19,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 143,
+        "pollId": 36,
+        "studentId": 19,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 144,
+        "pollId": 36,
+        "studentId": 19,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 145,
+        "pollId": 37,
+        "studentId": 20,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 146,
+        "pollId": 37,
+        "studentId": 20,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 147,
+        "pollId": 37,
+        "studentId": 20,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 148,
+        "pollId": 37,
+        "studentId": 20,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 149,
+        "pollId": 38,
+        "studentId": 20,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 150,
+        "pollId": 38,
+        "studentId": 20,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 151,
+        "pollId": 38,
+        "studentId": 20,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 152,
+        "pollId": 38,
+        "studentId": 20,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 153,
+        "pollId": 39,
+        "studentId": 21,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 154,
+        "pollId": 39,
+        "studentId": 21,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 155,
+        "pollId": 39,
+        "studentId": 21,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 156,
+        "pollId": 39,
+        "studentId": 21,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 157,
+        "pollId": 40,
+        "studentId": 21,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 158,
+        "pollId": 40,
+        "studentId": 21,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 159,
+        "pollId": 40,
+        "studentId": 21,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 160,
+        "pollId": 40,
+        "studentId": 21,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 161,
+        "pollId": 41,
+        "studentId": 22,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 162,
+        "pollId": 41,
+        "studentId": 22,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 163,
+        "pollId": 41,
+        "studentId": 22,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 10 минут"
+      },
+      {
+        "id": 164,
+        "pollId": 41,
+        "studentId": 22,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 165,
+        "pollId": 42,
+        "studentId": 22,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 166,
+        "pollId": 42,
+        "studentId": 22,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 167,
+        "pollId": 42,
+        "studentId": 22,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 168,
+        "pollId": 42,
+        "studentId": 22,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 169,
+        "pollId": 43,
+        "studentId": 23,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 3,
+        "reason": ""
+      },
+      {
+        "id": 170,
+        "pollId": 43,
+        "studentId": 23,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 171,
+        "pollId": 43,
+        "studentId": 23,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 172,
+        "pollId": 43,
+        "studentId": 23,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 173,
+        "pollId": 44,
+        "studentId": 23,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 174,
+        "pollId": 44,
+        "studentId": 23,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 175,
+        "pollId": 44,
+        "studentId": 23,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 176,
+        "pollId": 44,
+        "studentId": 23,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 177,
+        "pollId": 45,
+        "studentId": 24,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 178,
+        "pollId": 45,
+        "studentId": 24,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 179,
+        "pollId": 45,
+        "studentId": 24,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 180,
+        "pollId": 45,
+        "studentId": 24,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 181,
+        "pollId": 46,
+        "studentId": 24,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 182,
+        "pollId": 46,
+        "studentId": 24,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "L",
+        "grade": 3,
+        "reason": "Опоздание на 5 минут"
+      },
+      {
+        "id": 183,
+        "pollId": 46,
+        "studentId": 24,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 184,
+        "pollId": 46,
+        "studentId": 24,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 185,
+        "pollId": 47,
+        "studentId": 25,
+        "disciplineId": 5,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 186,
+        "pollId": 47,
+        "studentId": 25,
+        "disciplineId": 6,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 187,
+        "pollId": 47,
+        "studentId": 25,
+        "disciplineId": 7,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 188,
+        "pollId": 47,
+        "studentId": 25,
+        "disciplineId": 8,
+        "date": "2026-06-16",
+        "status": "N",
+        "grade": null,
+        "reason": "Отсутствовал на паре"
+      },
+      {
+        "id": 189,
+        "pollId": 48,
+        "studentId": 25,
+        "disciplineId": 5,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 190,
+        "pollId": 48,
+        "studentId": 25,
+        "disciplineId": 6,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 191,
+        "pollId": 48,
+        "studentId": 25,
+        "disciplineId": 7,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 192,
+        "pollId": 48,
+        "studentId": 25,
+        "disciplineId": 8,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 193,
+        "pollId": 49,
+        "studentId": 26,
+        "disciplineId": 1,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 194,
+        "pollId": 49,
+        "studentId": 26,
+        "disciplineId": 2,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 195,
+        "pollId": 49,
+        "studentId": 26,
+        "disciplineId": 3,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 196,
+        "pollId": 49,
+        "studentId": 26,
+        "disciplineId": 4,
+        "date": "2026-06-16",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 197,
+        "pollId": 50,
+        "studentId": 26,
+        "disciplineId": 1,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      },
+      {
+        "id": 198,
+        "pollId": 50,
+        "studentId": 26,
+        "disciplineId": 2,
+        "date": "2026-06-17",
+        "status": "N",
+        "grade": null,
+        "reason": "Пропуск по болезни"
+      },
+      {
+        "id": 199,
+        "pollId": 50,
+        "studentId": 26,
+        "disciplineId": 3,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 4,
+        "reason": ""
+      },
+      {
+        "id": 200,
+        "pollId": 50,
+        "studentId": 26,
+        "disciplineId": 4,
+        "date": "2026-06-17",
+        "status": "P",
+        "grade": 5,
+        "reason": ""
+      }
+    ],
+    "polls": [
+      {
+        "id": 1,
+        "disciplineId": 5,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-16T08:00:00.000Z",
+        "expiresAt": "2026-06-16T08:45:00.000Z",
+        "active": false,
+        "title": "Основы 3Д моделирования в Blender — Лекция 1"
+      },
+      {
+        "id": 2,
+        "disciplineId": 5,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-17T08:00:00.000Z",
+        "expiresAt": "2026-06-17T08:45:00.000Z",
+        "active": false,
+        "title": "Основы 3Д моделирования в Blender — Лекция 2"
+      },
+      {
+        "id": 3,
+        "disciplineId": 6,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-16T09:00:00.000Z",
+        "expiresAt": "2026-06-16T09:45:00.000Z",
+        "active": false,
+        "title": "Основы программирования — Лекция 1"
+      },
+      {
+        "id": 4,
+        "disciplineId": 6,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-17T09:00:00.000Z",
+        "expiresAt": "2026-06-17T09:45:00.000Z",
+        "active": false,
+        "title": "Основы программирования — Лекция 2"
+      },
+      {
+        "id": 5,
+        "disciplineId": 7,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-16T10:00:00.000Z",
+        "expiresAt": "2026-06-16T10:45:00.000Z",
+        "active": false,
+        "title": "Веб-дизайн на Figma — Лекция 1"
+      },
+      {
+        "id": 6,
+        "disciplineId": 7,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-17T10:00:00.000Z",
+        "expiresAt": "2026-06-17T10:45:00.000Z",
+        "active": false,
+        "title": "Веб-дизайн на Figma — Лекция 2"
+      },
+      {
+        "id": 7,
+        "disciplineId": 8,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-16T11:00:00.000Z",
+        "expiresAt": "2026-06-16T11:45:00.000Z",
+        "active": false,
+        "title": "Создание БД в 1С — Лекция 1"
+      },
+      {
+        "id": 8,
+        "disciplineId": 8,
+        "teacherId": 1,
+        "groupId": 2,
+        "startedAt": "2026-06-17T11:00:00.000Z",
+        "expiresAt": "2026-06-17T11:45:00.000Z",
+        "active": false,
+        "title": "Создание БД в 1С — Лекция 2"
+      },
+      {
+        "id": 49,
+        "disciplineId": 1,
+        "teacherId": 1,
+        "groupId": 1,
+        "startedAt": "2026-06-16T08:00:00.000Z",
+        "expiresAt": "2026-06-16T08:45:00.000Z",
+        "active": false,
+        "title": "Основы 3Д моделирования в Blender — ИС-22"
+      },
+      {
+        "id": 50,
+        "disciplineId": 1,
+        "teacherId": 1,
+        "groupId": 1,
+        "startedAt": "2026-06-17T08:00:00.000Z",
+        "expiresAt": "2026-06-17T08:45:00.000Z",
+        "active": false,
+        "title": "Основы 3Д моделирования в Blender — ИС-22"
+      }
+    ]
+  }
