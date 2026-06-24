@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { getUser } from '../../../utils/auth';
+import { ViewButton } from '../../ui/viewButton/viewButton';
+import { ExitButton } from '../../ui/exitButton/exitButton';
 import styles from './mainStudent.module.scss';
 import iconImg from '../../../assets/icone.png';
 
@@ -40,9 +42,7 @@ export const MainStudent = () => {
               <p className={styles.studentName}>{user?.fullName || 'Студент'}</p>
               <span className={styles.studentRole}>студент</span>
             </div>
-            <button className={styles.exit} onClick={handleLogout}>
-              Выйти
-            </button>
+            <ExitButton onClick={handleLogout} />
           </div>
         </div>
 
@@ -58,12 +58,7 @@ export const MainStudent = () => {
             {disciplines.map((discipline) => (
               <li key={discipline.id} className={styles.item}>
                 <span className={styles.disciplineName}>{discipline.name}</span>
-                <button
-                  className={styles.view}
-                  onClick={() => handleView(discipline.id)}
-                >
-                  Посмотреть
-                </button>
+                <ViewButton onClick={() => handleView(discipline.id)} />
               </li>
             ))}
           </ul>

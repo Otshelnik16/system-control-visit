@@ -1,0 +1,34 @@
+.confirmBtn {
+    background: #E8F5E9;        /* светло-зелёный фон */
+    color: #2E7D32;             /* тёмно-зелёный текст */
+    border: 2px solid #4CAF50;  /* зелёная рамка */
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  
+    &:hover {
+      background: #C8E6C9;
+      border-color: #388E3C;
+    }
+  
+    &:disabled {
+      background: #E0E0E0;
+      border-color: #BDBDBD;
+      color: #9E9E9E;
+      cursor: not-allowed;
+    }
+  }
+  
+  .confirmed {
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 16px;
+    background: #E8F5E9;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    display: inline-block;
+  }

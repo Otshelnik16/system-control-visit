@@ -1,4 +1,4 @@
-import type { User, UserRole } from '../types/user';
+import type { User } from '../types/user';
 
 const TOKEN_KEY = 'token';
 const USER_KEY = 'user';
@@ -20,7 +20,7 @@ export const getUser = (): User | null => {
   }
 };
 
-export const getUserRole = (): UserRole | null => getUser()?.role ?? null;
+export const getUserRole = (): 'student' | 'teacher' | null => getUser()?.role ?? null;
 
 export const isAuthenticated = (): boolean => getToken() !== null;
 
@@ -29,5 +29,5 @@ export const logout = () => {
   localStorage.removeItem(USER_KEY);
 };
 
-// ✅ ЭКСПОРТИРУЕМ UserRole ИЗ ЭТОГО ФАЙЛА
-export type { UserRole };
+// ✅ ЭКСПОРТИРУЕМ ТИП
+export type { UserRole } from '../types/user';

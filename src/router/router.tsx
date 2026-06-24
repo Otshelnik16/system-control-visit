@@ -4,6 +4,7 @@ import { Login } from '../components/pages/login/login';
 import { MainStudent } from '../components/pages/MainStudent/mainStudent';
 import { MainTeacher } from '../components/pages/MainTeacher/mainTeacher';
 import { Discipline } from '../components/pages/discipline/discipline';
+import { TeacherGradebook } from '../components/pages/teacherGradebook/teacherGradebook';
 import { getUserRole, isAuthenticated, type UserRole } from '../utils/auth';
 
 interface ProtectedRouteProps {
@@ -49,6 +50,15 @@ export const Router = () => {
         element={
           <ProtectedRoute role="teacher">
             <MainTeacher />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/gradebook/:groupId"
+        element={
+          <ProtectedRoute role="teacher">
+            <TeacherGradebook />
           </ProtectedRoute>
         }
       />

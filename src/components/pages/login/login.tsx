@@ -1,16 +1,16 @@
 import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authenticateUser, generateToken } from '../../../services/authService';
+import { loginUser } from '../../../api/services';
 import { setAuth } from '../../../utils/auth';
 import { Logo } from '../../ui/logo/logo';
 import { Title } from '../../ui/title/title';
 import { Input } from '../../ui/input/input';
-import { Button } from '../../ui/mainButton/button.tsx';
+import { Button } from '../../ui/mainButton/button';
 import styles from './login.module.scss';
 
 export const Login = () => {
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('');
+  const [login, setLogin] = useState('student1');
+  const [password, setPassword] = useState('student123');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -21,14 +21,15 @@ export const Login = () => {
     setLoading(true);
 
     try {
-      const user = await authenticateUser(login, password);
+      const user = await loginUser(login, password);
 
       if (!user) {
         setError('Неверный логин или пароль');
         return;
       }
 
-      setAuth(user, generateToken());
+      const token = crypto.randomUUID();
+      setAuth(user, token);
       navigate(user.role === 'student' ? '/student' : '/teacher');
     } catch {
       setError('Не удалось подключиться к серверу. Запустите npm run dev');

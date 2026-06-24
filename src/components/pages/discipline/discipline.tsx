@@ -1,8 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getUser } from '../../../utils/auth';
+import { getDiscipline, getAttendanceByDisciplineAndStudent } from '../../../api/services';
+import { STATUS_LABELS } from '../../../constants';
+import { ConfirmAttendance } from '../../ui/confirmAttendance/confirmAttendance';
 import styles from './discipline.module.scss';
 import iconImg from '../../../assets/icone.png';
+
+interface DisciplineType {
+  id: number;
+  name: string;
+  groupId: number;
+}
 
 interface AttendanceRecord {
   id: number;
@@ -14,40 +23,32 @@ interface AttendanceRecord {
   reason: string;
 }
 
-interface Discipline {
-  id: number;
-  name: string;
-  groupId: number;
-}
-
 export const Discipline = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const user = getUser();
 
-  const [discipline, setDiscipline] = useState<Discipline | null>(null);
+  const [discipline, setDiscipline] = useState<DisciplineType | null>(null);
   const [attendance, setAttendance] = useState<AttendanceRecord[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // 1. Получаем данные дисциплины
-        const discRes = await fetch(`/api/disciplines/${id}`);
-        const discData = await discRes.json();
+        if (!user) {
+          console.error('❌ Пользователь не авторизован');
+          setLoading(false);
+          return;
+        }
+
+        const discData = await getDiscipline(Number(id));
         setDiscipline(discData);
 
-        // 2. Получаем ВСЮ посещаемость
-        const attRes = await fetch(`/api/attendance`);
-        const allAtt = await attRes.json();
-
-        // 3. Фильтруем по disciplineId И studentId
-        const filtered = allAtt.filter(
-          (record: AttendanceRecord) =>
-            record.disciplineId === Number(id) &&
-            record.studentId === Number(user?.id)
+        const records = await getAttendanceByDisciplineAndStudent(
+          Number(id),
+          Number(user.id)
         );
-        setAttendance(filtered);
+        setAttendance(records);
       } catch (error) {
         console.error('Ошибка загрузки данных:', error);
       } finally {
@@ -56,23 +57,9 @@ export const Discipline = () => {
     };
 
     fetchData();
-  }, [id, user?.id]);
+  }, [id, user]);
 
-  const handleBack = () => {
-    navigate('/student');
-  };
-
-  const handleConfirm = () => {
-    alert('Функция подтверждения в разработке');
-  };
-
-  if (loading) {
-    return <div className={styles.loading}>Загрузка...</div>;
-  }
-
-  if (!discipline) {
-    return <div className={styles.error}>Дисциплина не найдена</div>;
-  }
+  const handleBack = () => navigate('/student');
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -84,15 +71,9 @@ export const Discipline = () => {
     }
   };
 
-  const getStatusText = (status: string) => {
-    switch (status) {
-      case 'P': return 'Присутствовал';
-      case 'N': return 'Не присутствовал';
-      case 'L': return 'Опоздал';
-      case 'Б': return 'По болезни';
-      default: return 'Неизвестно';
-    }
-  };
+  if (loading) return <div className={styles.loading}>Загрузка...</div>;
+  if (!user) return <div className={styles.error}>Вы не авторизованы</div>;
+  if (!discipline) return <div className={styles.error}>Дисциплина не найдена</div>;
 
   return (
     <div className={styles.pageWrapper}>
@@ -117,7 +98,6 @@ export const Discipline = () => {
           </div>
         </div>
 
-        {/* НАЗАД И НАЗВАНИЕ */}
         <button className={styles.backBtn} onClick={handleBack}>
           ← Назад к списку дисциплин
         </button>
@@ -147,7 +127,7 @@ export const Discipline = () => {
                     <td>{record.date}</td>
                     <td>
                       <span className={`${styles.statusBadge} ${getStatusColor(record.status)}`}>
-                        {getStatusText(record.status)}
+                        {STATUS_LABELS[record.status] || record.status}
                       </span>
                     </td>
                     <td>{record.reason || '-'}</td>
@@ -158,15 +138,19 @@ export const Discipline = () => {
           </table>
         </div>
 
-        {/* КАРТОЧКА СТУДЕНТА */}
+        {/* КАРТОЧКА СТУДЕНТА + КНОПКА ПОДТВЕРЖДЕНИЯ */}
         <div className={styles.studentCard}>
           <div className={styles.studentInfoBottom}>
             <p className={styles.studentNameBottom}>{user?.fullName || 'Студент'}</p>
             <span className={styles.studentRoleBottom}>студент</span>
           </div>
-          <button className={styles.confirmBtn} onClick={handleConfirm}>
-            Подтвердить присутствие
-          </button>
+
+          {/* 👇 КНОПКА ПОДТВЕРДИТЬ ПРИСУТСТВИЕ */}
+          <ConfirmAttendance
+            disciplineId={Number(id)}
+            studentId={Number(user.id)}
+            groupId={Number(user.groupId)}
+          />
         </div>
       </div>
     </div>

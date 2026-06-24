@@ -1,4 +1,4 @@
-import type { DbStudent, DbTeacher, User } from '../types/user';
+import type { Student, Teacher, User } from '../types/user';
 
 const API_URL = '/api';
 
@@ -10,13 +10,17 @@ const findTeacher = async (login: string, password: string): Promise<User | null
     throw new Error('Ошибка соединения с сервером');
   }
 
-  const teachers: DbTeacher[] = await response.json();
+  const teachers: Teacher[] = await response.json();
   const teacher = teachers[0];
 
   if (!teacher) return null;
 
   const { password: _, ...profile } = teacher;
-  return { ...profile, role: 'teacher' };
+  return { 
+    ...profile, 
+    id: Number(profile.id),  // ← ПРЕОБРАЗУЕМ В number
+    role: 'teacher' 
+  };
 };
 
 const findStudent = async (login: string, password: string): Promise<User | null> => {
@@ -27,13 +31,17 @@ const findStudent = async (login: string, password: string): Promise<User | null
     throw new Error('Ошибка соединения с сервером');
   }
 
-  const students: DbStudent[] = await response.json();
+  const students: Student[] = await response.json();
   const student = students[0];
 
   if (!student) return null;
 
   const { password: _, ...profile } = student;
-  return { ...profile, role: 'student' };
+  return { 
+    ...profile, 
+    id: Number(profile.id),  // ← ПРЕОБРАЗУЕМ В number
+    role: 'student' 
+  };
 };
 
 export const authenticateUser = async (login: string, password: string): Promise<User | null> => {

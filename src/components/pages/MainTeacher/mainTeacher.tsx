@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { getUser } from '../../../utils/auth';
+import { OpenGradebook } from '../../ui/openGradebook/openGradebook';
+import { ExitButton } from '../../ui/exitButton/exitButton';
 import styles from './mainTeacher.module.scss';
 import iconImg from '../../../assets/icone.png';
 
@@ -9,6 +11,18 @@ export const MainTeacher = () => {
 
   const handleLogout = () => {
     navigate('/login');
+  };
+
+  // Данные групп
+  const groups = [
+    { id: 2, name: 'ИС-21', fullName: 'Группа ИС-21', students: 9, disciplines: 4 },
+    { id: 1, name: 'ИС-22', fullName: 'Группа ИС-22', students: 0, disciplines: 0 },
+    { id: 3, name: 'КС-21', fullName: 'Группа КС-21', students: 0, disciplines: 0 },
+    { id: 4, name: 'КС-22', fullName: 'Группа КС-22', students: 0, disciplines: 0 },
+  ];
+
+  const handleOpenGradebook = (groupId: number) => {
+    navigate(`/gradebook/${groupId}`);
   };
 
   return (
@@ -28,9 +42,7 @@ export const MainTeacher = () => {
               <p className={styles.teacherName}>{user?.fullName || 'Преподаватель'}</p>
               <span className={styles.teacherRole}>преподаватель</span>
             </div>
-            <button className={styles.exit} onClick={handleLogout}>
-              Выйти
-            </button>
+            <ExitButton onClick={handleLogout} />
           </div>
         </div>
 
@@ -38,34 +50,15 @@ export const MainTeacher = () => {
         <div className={styles.groups}>
           <h2>Мои группы</h2>
           <div className={styles.groupList}>
-            <div className={styles.groupCard}>
-              <h3>ИС-21</h3>
-              <p>Группа ИС-21</p>
-              <p>Студентов: 9</p>
-              <p>Дисциплин: 4</p>
-              <button className={styles.open}>Открыть табель</button>
-            </div>
-            <div className={styles.groupCard}>
-              <h3>ИС-22</h3>
-              <p>Группа ИС-22</p>
-              <p>Студентов: 0</p>
-              <p>Дисциплин: 0</p>
-              <button className={styles.open}>Открыть табель</button>
-            </div>
-            <div className={styles.groupCard}>
-              <h3>КС-21</h3>
-              <p>Группа КС-21</p>
-              <p>Студентов: 0</p>
-              <p>Дисциплин: 0</p>
-              <button className={styles.open}>Открыть табель</button>
-            </div>
-            <div className={styles.groupCard}>
-              <h3>КС-22</h3>
-              <p>Группа КС-22</p>
-              <p>Студентов: 0</p>
-              <p>Дисциплин: 0</p>
-              <button className={styles.open}>Открыть табель</button>
-            </div>
+            {groups.map((group) => (
+              <div key={group.id} className={styles.groupCard}>
+                <h3>{group.name}</h3>
+                <p>{group.fullName}</p>
+                <p>Студентов: {group.students}</p>
+                <p>Дисциплин: {group.disciplines}</p>
+                <OpenGradebook onClick={() => handleOpenGradebook(group.id)} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

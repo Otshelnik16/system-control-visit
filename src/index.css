@@ -19,6 +19,8 @@
   --color-text-button: #5B6F82;
   --color-button: #F5D6C6;
   --color-exit: #E57373;
+  --color-exit: #C6E0F5;      /* word - кнопка ежемесячный еженедельный и ежедневный */
+
   /* Дополнительные переменные */
   --secondary-background: #f0f0f0;
   --light-grey: #d1d5db;

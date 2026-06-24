@@ -1,0 +1,20 @@
+.startPollBtn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  
+    &:hover {
+      background: #388E3C;
+    }
+  
+    &:disabled {
+      background: #9E9E9E;
+      cursor: not-allowed;
+    }
+  }
