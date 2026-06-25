@@ -23,16 +23,26 @@ export const MainTeacher = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Получаем все группы
         const groupsRes = await fetch('/api/groups');
         const groupsData = await groupsRes.json();
 
+        // Получаем всех студентов
         const studentsRes = await fetch('/api/students');
         const studentsData = await studentsRes.json();
 
+        // Получаем все дисциплины
         const disciplinesRes = await fetch('/api/disciplines');
         const disciplinesData = await disciplinesRes.json();
 
-        const groupsWithStats = groupsData.map((group: any) => {
+        // ✅ Фильтруем группы по teacherId (берём id текущего пользователя)
+        const teacherId = Number(user?.id);
+        const filteredGroups = groupsData.filter(
+          (group: any) => Number(group.teacherId) === teacherId
+        );
+
+        // Собираем данные по каждой группе
+        const groupsWithStats = filteredGroups.map((group: any) => {
           const groupId = Number(group.id);
           
           const studentsCount = studentsData.filter(
@@ -50,13 +60,15 @@ export const MainTeacher = () => {
           };
         });
 
-        // ✅ СОРТИРУЕМ: ИС-21 → ИС-22 → КС-21 → КС-22
+        // Сортируем группы
         const sortedGroups = groupsWithStats.sort((a, b) => {
           const order: { [key: string]: number } = {
             'ИС-21': 1,
             'ИС-22': 2,
             'КС-21': 3,
             'КС-22': 4,
+            'ПС-21': 5,
+            'ПС-22': 6,
           };
           return (order[a.name] || 99) - (order[b.name] || 99);
         });
@@ -70,7 +82,7 @@ export const MainTeacher = () => {
     };
 
     fetchData();
-  }, []);
+  }, [user]);
 
   const handleLogout = () => {
     navigate('/login');
@@ -87,6 +99,7 @@ export const MainTeacher = () => {
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.container}>
+        {/* ШАПКА */}
         <div className={styles.header}>
           <div className={styles.headerLeft}>
             <img src={iconImg} alt="Логотип" className={styles.icon} />
@@ -104,19 +117,27 @@ export const MainTeacher = () => {
           </div>
         </div>
 
+        {/* ГРУППЫ */}
         <div className={styles.groups}>
           <h2>Мои группы</h2>
-          <div className={styles.groupList}>
-            {groups.map((group) => (
-              <div key={group.id} className={styles.groupCard}>
-                <h3>{group.name}</h3>
-                <p>{group.fullName}</p>
-                <p>Студентов: {group.students}</p>
-                <p>Дисциплин: {group.disciplines}</p>
-                <OpenGradebook onClick={() => handleOpenGradebook(group.id)} />
-              </div>
-            ))}
-          </div>
+          
+          {groups.length === 0 ? (
+            <div className={styles.emptyGroups}>
+              <p>В ДАННЫЙ МОМЕНТ У ВАС НЕТ НИ ОДНОЙ ГРУППЫ</p>
+            </div>
+          ) : (
+            <div className={styles.groupList}>
+              {groups.map((group) => (
+                <div key={group.id} className={styles.groupCard}>
+                  <h3>{group.name}</h3>
+                  <p>{group.fullName}</p>
+                  <p>Студентов: {group.students}</p>
+                  <p>Дисциплин: {group.disciplines}</p>
+                  <OpenGradebook onClick={() => handleOpenGradebook(group.id)} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

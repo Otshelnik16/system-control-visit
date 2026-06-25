@@ -1,11 +1,17 @@
 {
   "teachers": [
-    {
-      "id": "1",
-      "login": "teacher",
-      "password": "teacher123",
-      "fullName": "Микулин Андрей Николаевич"
-    }
+  {
+    "id": "1",
+    "login": "teacher1",
+    "password": "teacher123",
+    "fullName": "Микулин Андрей Николаевич"
+  },
+  {
+    "id": "2",
+    "login": "teacher2",
+    "password": "teacher123",
+    "fullName": "Белов Сергей Михайлович"
+  }
   ],
   "groups": [
     {
@@ -11009,6 +11015,5 @@
       "title": "Опрос 25.06.2026",
       "id": "lHycur2zjnc"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

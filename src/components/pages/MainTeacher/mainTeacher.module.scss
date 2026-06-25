@@ -12,6 +12,7 @@
 .container {
   max-width: 900px;
   width: 100%;
+  min-height: 600px; /* ← МИНИМАЛЬНАЯ ВЫСОТА */
   background: var(--color-fon, #F5F5F5);
   border: 1.5px solid var(--color-stroke, #A7BDC5);
   border-radius: 24px;
@@ -178,10 +179,32 @@
       background: #E8C4B4;
     }
   }
-  .loading {
-    text-align: center;
-    padding: 40px 0;
-    font-size: 18px;
-    color: var(--color-text, #3D5A73);
-  }
+}
+
+/* ===== ПУСТОЕ СОСТОЯНИЕ (НЕТ ГРУПП) ===== */
+.emptyGroups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 20px;
+}
+
+.emptyGroups p {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text, #3D5A73);
+  opacity: 0.6;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ===== ЗАГРУЗКА ===== */
+.loading {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: var(--color-text, #3D5A73);
 }
