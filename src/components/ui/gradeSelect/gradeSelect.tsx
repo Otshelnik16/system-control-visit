@@ -6,7 +6,7 @@ interface GradeSelectProps {
   placeholder?: string;
 }
 
-export const GradeSelect = ({ value, onChange, placeholder = 'указать отметку' }: GradeSelectProps) => {
+export const GradeSelect = ({ value, onChange, placeholder = '-' }: GradeSelectProps) => {
   return (
     <select
       className={styles.gradeSelect}
@@ -18,6 +18,7 @@ export const GradeSelect = ({ value, onChange, placeholder = 'указать о�
       <option value="4">4</option>
       <option value="3">3</option>
       <option value="2">2</option>
+      <option value="1">1</option>
     </select>
   );
 };

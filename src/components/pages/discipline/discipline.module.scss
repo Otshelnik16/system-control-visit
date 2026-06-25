@@ -299,3 +299,13 @@
   .error {
     color: #C62828;
   }
+
+  /* ===== КНОПКА ПОДТВЕРДИТЬ ПРИСУТСТВИЕ (ПО ЦЕНТРУ) ===== */
+.confirmWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-stroke, #A7BDC5);
+}

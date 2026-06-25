@@ -178,4 +178,10 @@
       background: #E8C4B4;
     }
   }
+  .loading {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: var(--color-text, #3D5A73);
+  }
 }

@@ -6,7 +6,7 @@ interface StatusSelectProps {
   placeholder?: string;
 }
 
-export const StatusSelect = ({ value, onChange, placeholder = 'Указать статус' }: StatusSelectProps) => {
+export const StatusSelect = ({ value, onChange, placeholder = '-' }: StatusSelectProps) => {
   return (
     <select
       className={styles.statusSelect}

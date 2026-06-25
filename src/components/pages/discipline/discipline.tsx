@@ -63,10 +63,10 @@ export const Discipline = () => {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'P': return styles.statusPresent;
-      case 'N': return styles.statusAbsent;
-      case 'L': return styles.statusLate;
-      case 'Б': return styles.statusSick;
+      case 'П': return styles.statusPresent;
+      case 'Н': return styles.statusAbsent;
+      case 'О': return styles.statusLate;
+      case 'УП': return styles.statusSick;
       default: return styles.statusDefault;
     }
   };
@@ -98,6 +98,7 @@ export const Discipline = () => {
           </div>
         </div>
 
+        {/* НАЗАД И НАЗВАНИЕ */}
         <button className={styles.backBtn} onClick={handleBack}>
           ← Назад к списку дисциплин
         </button>
@@ -138,14 +139,8 @@ export const Discipline = () => {
           </table>
         </div>
 
-        {/* КАРТОЧКА СТУДЕНТА + КНОПКА ПОДТВЕРЖДЕНИЯ */}
-        <div className={styles.studentCard}>
-          <div className={styles.studentInfoBottom}>
-            <p className={styles.studentNameBottom}>{user?.fullName || 'Студент'}</p>
-            <span className={styles.studentRoleBottom}>студент</span>
-          </div>
-
-          {/* 👇 КНОПКА ПОДТВЕРДИТЬ ПРИСУТСТВИЕ */}
+        {/* 👇 КНОПКА ПОДТВЕРДИТЬ ПРИСУТСТВИЕ (ПО ЦЕНТРУ, БЕЗ ДУБЛИРУЮЩЕГО ФИО) */}
+        <div className={styles.confirmWrapper}>
           <ConfirmAttendance
             disciplineId={Number(id)}
             studentId={Number(user.id)}

@@ -13,7 +13,6 @@ export const MainStudent = () => {
     navigate('/login');
   };
 
-  // Данные дисциплин с ID
   const disciplines = [
     { id: 1, name: 'Основы 3Д моделирования в Blender' },
     { id: 2, name: 'Основы программирования' },
@@ -58,7 +57,9 @@ export const MainStudent = () => {
             {disciplines.map((discipline) => (
               <li key={discipline.id} className={styles.item}>
                 <span className={styles.disciplineName}>{discipline.name}</span>
-                <ViewButton onClick={() => handleView(discipline.id)} />
+                <ViewButton onClick={() => handleView(discipline.id)}>
+                  Посмотреть
+                </ViewButton>
               </li>
             ))}
           </ul>
